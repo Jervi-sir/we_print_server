@@ -111,58 +111,6 @@
                                                      </h4>
                                                   </div>
                                                </div>
-                                               <div class="col homemenu">
-                                                  <div class="homemenu-thumb mb-15">
-                                                     <img src="assets/img/menu/home-2.jpg" alt="">
-                                                     <div class="homemenu-btn">
-                                                        <a class="tp-menu-btn" href="index-2.html">View Demo</a>
-                                                     </div>
-                                                  </div>
-                                                  <div class="homemenu-content text-center">
-                                                     <h4 class="homemenu-title">
-                                                        <a href="index-2.html">Home 02</a>
-                                                     </h4>
-                                                  </div>
-                                               </div>
-                                               <div class="col homemenu">
-                                                  <div class="homemenu-thumb mb-15">
-                                                     <img src="assets/img/menu/home-3.jpg" alt="">
-                                                     <div class="homemenu-btn">
-                                                        <a class="tp-menu-btn" href="index-3.html">View Demo</a>
-                                                     </div>
-                                                  </div>
-                                                  <div class="homemenu-content text-center">
-                                                     <h4 class="homemenu-title">
-                                                        <a href="index-3.html">Home 03</a>
-                                                     </h4>
-                                                  </div>
-                                               </div>
-                                               <div class="col homemenu">
-                                                  <div class="homemenu-thumb mb-15">
-                                                     <img src="assets/img/menu/home-4.jpg" alt="">
-                                                     <div class="homemenu-btn">
-                                                        <a class="tp-menu-btn" href="index-4.html">View Demo</a>
-                                                     </div>
-                                                  </div>
-                                                  <div class="homemenu-content text-center">
-                                                     <h4 class="homemenu-title">
-                                                        <a href="index-4.html">Home 04</a>
-                                                     </h4>
-                                                  </div>
-                                               </div>
-                                               <div class="col homemenu">
-                                                  <div class="homemenu-thumb mb-15">
-                                                     <img src="assets/img/menu/home-5.jpg" alt="">
-                                                     <div class="homemenu-btn">
-                                                        <a class="tp-menu-btn" href="index-5.html">View Demo</a>
-                                                     </div>
-                                                  </div>
-                                                  <div class="homemenu-content text-center">
-                                                     <h4 class="homemenu-title">
-                                                        <a href="index-4.html">Home 05</a>
-                                                     </h4>
-                                                  </div>
-                                               </div>
                                             </div>
                                         </div>
                                     </li>
@@ -170,34 +118,16 @@
                                         <a href="#">pages</a>
                                         <ul class="submenu tp-submenu">
                                             <li><a href="team.html">Team</a></li>
-                                            <li><a href="project.html">project</a></li>
-                                            <li><a href="project-details.html">project details</a></li>
-                                            <li><a href="shop.html">shop</a></li>
-                                            <li><a href="shop-details.html">shop details</a></li>
-                                            <li><a href="cart.html">cart</a></li>
-                                            <li><a href="checkout.html">checkout</a></li>
-                                            <li><a href="faq.html">faq</a></li>
-                                            <li><a href="login.html">login</a></li>
-                                            <li><a href="register.html">register</a></li>
-                                            <li><a href="404.html">404</a></li>
                                         </ul>
                                     </li>
                                     <li class="has-dropdown">
                                         <a href="service.html">services</a>
                                         <ul class="submenu tp-submenu">
                                             <li><a href="service.html">service</a></li>
-                                            <li><a href="service-details.html">service details</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <a href="about-us.html">about</a>
-                                    </li>
-                                    <li class="has-dropdown">
-                                        <a href="blog.html">news</a>
-                                        <ul class="submenu tp-submenu">
-                                            <li><a href="blog.html">blog</a></li>
-                                            <li><a href="blog-details.html">blog details</a></li>
-                                        </ul>
                                     </li>
                                     <li>
                                         <a href="contact.html">contact</a>
