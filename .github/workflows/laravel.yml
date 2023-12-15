@@ -31,7 +31,7 @@ jobs:
         username: ${{ secrets.REMOTE_USER }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
-          cd /path/to/your/laravel/project
+          cd /home/jervi/Desktop/we_print_server
           git pull origin main
           php artisan migrate
           php artisan config:cache
