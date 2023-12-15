@@ -2,36 +2,36 @@ name: Laravel CI/CD
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout
+      uses: actions/checkout@v2
 
     - name: Set up PHP
       uses: shivammathur/setup-php@v2
       with:
         php-version: '8.0'
-    
+        extensions: mbstring, xml, ctype, json, bcmath, curl
+
     - name: Install Dependencies
-      run: composer install --no-interaction --prefer-dist --optimize-autoloader
-    
-    - name: Copy Environment File
-      run: cp .env.example .env
-    
-    - name: Generate Key
-      run: php artisan key:generate
+      run: composer install --prefer-dist --no-progress --no-suggest
 
-    # Add any other necessary steps like migrations, npm install, etc.
+    # Optional: Add steps for testing
 
-    - name: Deploy to Server
-      uses: easingthemes/ssh-deploy@v2.1.5
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        SOURCE: '.'
-        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-        REMOTE_USER: ${{ secrets.REMOTE_USER }}
-        TARGET: ${{ secrets.TARGET_DIRECTORY }}
+    - name: Deploy to VPS
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.REMOTE_HOST }}
+        username: ${{ secrets.REMOTE_USER }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
+          cd /path/to/your/laravel/project
+          git pull origin main
+          php artisan migrate
+          php artisan config:cache
